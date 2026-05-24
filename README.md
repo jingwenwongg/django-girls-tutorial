@@ -14,7 +14,53 @@ A simple blog application built by following the [Django Girls Tutorial](https:/
 * **Responsive design** using Bootstrap.
 * Live deployment on **PythonAnywhere**.
 
-## How to Run locally
-1. Clone the repository.
-2. Install requirements: `pip install -r requirements.txt`
-3. Run the server: `python manage.py runserver`
+## Run Locally
+
+1. Clone the repository
+
+```bash
+git clone <repository-url>
+cd <repository-name>
+```
+
+2. Create and activate a virtual environment
+
+```bash
+python -m venv venv
+```
+
+Mac/Linux:
+
+```bash
+source venv/bin/activate
+```
+
+Windows:
+
+```bash
+venv\Scripts\activate
+```
+
+3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+4. Apply database migrations
+
+```bash
+python manage.py migrate
+```
+
+5. Run the development server
+
+```bash
+python manage.py runserver
+```
+
+6. Open in browser:
+
+```text
+http://127.0.0.1:8000
+```
